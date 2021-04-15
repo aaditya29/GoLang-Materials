@@ -1,0 +1,30 @@
+JSON In Go
+JSON is a text-based data exchange format primarily used between browsers and servers.
+JSON (JavaScript Object Notation) is one of the most popular data exchange formats on the web.
+It’s a text encoded format, which means JSON data is a string of characters written in valid JSON format.
+
+The example below is a valid JSON format:
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "age": 21,
+    "heightInMeters": 1.75,
+    "isMale": true,
+    "profile": null,
+    "languages": [ "English", "French" ],
+    "grades": {
+        "math": "A",
+        "science": "A+"
+    }
+}
+However we may need to convert this text-data into a string data-type first in order to work with JSON APIs provided by the language.
+
+The JSON format was created as a means to transport data between browser and server that can be easily encoded from a JavaScript object
+or decoded to a JavaScript object by the JavaScript engine. Hence, JSON data looks exactly like a JavaScript object but in a string format.
+JSON format supports primarily 6 data types viz. string, number, boolean, null, array and object. 
+The number data type in JavaScript can represent both signed/unsigned integers and floating-point numbers. The null isn’t actually a data type but
+an empty value that can translate into an empty value that a language supports for example nil in the case of Go.
+
+In Go, the closest we can get to JSON representation is through map or struct data types. Both of these data structures can store complex data in key:value pairs.
+Thereforw While decoding a JSON string, we need a container that can store the JSON data in a valid data type like a map or a struct so that we can access JSON data idiomatically.
+In a similar manner, while encoding JSON data, we need an object like a map or a struct that can be converted to valid JSON format.
