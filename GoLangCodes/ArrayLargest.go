@@ -1,3 +1,5 @@
+//Calculates largest number in array in golang
+
 package main
 
 import "fmt"
