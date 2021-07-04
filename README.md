@@ -2,5 +2,5 @@
 
 Codes And Learning Materials in go langauge are included in this repo.
 
-##### Subheader
+##### Note:
 Repo created for personal watchlist only
